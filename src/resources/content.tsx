@@ -207,7 +207,7 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
            Membangun fitur login dan registrasi berbasis RFID untuk meningkatkan keamanan dan efisiensi proses autentikasi pengguna.
           </>,
           <>
-            Melakukan pengujian aplikasi untuk memastikan kualitas dan kinerja yang optimal sebelum dirilis ke pengguna.
+          Melakukan pengujian aplikasi untuk memastikan kualitas dan kinerja yang optimal sebelum dirilis ke pengguna.
           </>,
         ],
         images: [
@@ -233,10 +233,10 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
 pengembangan aplikasi website, mobile, desktop, machine learning hingga embeded system 
 (IoT).</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      // {
+      //   name: "Build the Future",
+      //   description: <>Studied online marketing and personal branding.</>,
+      // },
     ],
   },
   technical: {
@@ -314,8 +314,8 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
+  label: "Activities",
+  title: `Activities – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
