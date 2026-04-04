@@ -50,6 +50,7 @@ function readMDXFile(filePath: string) {
     tag: data.tag || [],
     team: data.team || [],
     link: data.link || "",
+    order: data.order || 0,
   };
 
   return { metadata, content };

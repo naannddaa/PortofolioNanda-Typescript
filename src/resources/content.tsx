@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Ayu Astarika",
   name: `Nanda Ayu Astarika`,
   role: "Software Developer Enthusiast",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/projects/project-01/fotonanda.jpeg",
   email: "nandakalipait@gmail.com",
   location: "Asia/Jakarta", // IANA time zone identifier
   languages: ["English", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
@@ -101,7 +101,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
