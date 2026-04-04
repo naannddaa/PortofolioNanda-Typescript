@@ -17,8 +17,10 @@ interface ProjectCardProps {
   title: string;
   content: string;
   description: string;
-  avatars: { src: string }[];
-  link: string;
+  avatars: { src: string }[]; // ✅ array
+  link?: string; // ✅ tambah ini
+  date?: string; // ✅ optional
+  order?: number;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -29,6 +31,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   avatars,
   link,
+  date,
 }) => {
   return (
     <Column fillWidth gap="m">
@@ -38,7 +41,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           slide: image,
           alt: title,
         }))}
+       
       />
+
       <Flex
         s={{ direction: "column" }}
         fillWidth
@@ -47,31 +52,47 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         paddingBottom="24"
         gap="l"
       >
-        {title && (
-          <Flex flex={5}>
-            <Heading as="h2" wrap="balance" variant="heading-strong-xl">
-              {title}
-            </Heading>
+        {/* ✅ WRAPPER */}
+        {(title || date) && (
+          <Flex direction="column" flex={5}>
+            {title && (
+              <Heading as="h2" wrap="balance" variant="heading-strong-xl">
+                {title}
+              </Heading>
+            )}
+
+            {date && (
+              <Text
+                variant="body-default-xs"
+                onBackground="neutral-weak"
+              >
+                {new Date(date).toLocaleDateString("id-ID", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </Text>
+            )}
           </Flex>
         )}
+
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
           <Column flex={7} gap="16">
-            {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
+            {avatars?.length > 0 && (
+              <AvatarGroup avatars={avatars} size="m" reverse />
+            )}
+
             {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
+              <Text
+                wrap="balance"
+                variant="body-default-s"
+                onBackground="neutral-weak"
+              >
                 {description}
               </Text>
             )}
+
             <Flex gap="24" wrap>
-              {content?.trim() && (
-                <SmartLink
-                  suffixIcon="arrowRight"
-                  style={{ margin: "0", width: "fit-content" }}
-                  href={href}
-                >
-                  <Text variant="body-default-s">Read case study</Text>
-                </SmartLink>
-              )}
               {link && (
                 <SmartLink
                   suffixIcon="arrowUpRightFromSquare"

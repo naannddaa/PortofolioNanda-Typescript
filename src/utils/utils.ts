@@ -19,6 +19,7 @@ type Metadata = {
   tag?: string;
   team: Team[];
   link?: string;
+  order?: number; 
 };
 
 import { notFound } from "next/navigation";

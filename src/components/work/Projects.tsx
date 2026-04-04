@@ -15,9 +15,9 @@ export function Projects({ range, exclude }: ProjectsProps) {
     allProjects = allProjects.filter((post) => !exclude.includes(post.slug));
   }
 
-  const sortedProjects = allProjects.sort((a, b) => {
-    return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
-  });
+ const sortedProjects = allProjects.sort((a, b) => {
+  return Number(a.metadata.order ?? 999) - Number(b.metadata.order ?? 999);
+});
 
   const displayedProjects = range
     ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
@@ -29,13 +29,15 @@ export function Projects({ range, exclude }: ProjectsProps) {
         <ProjectCard
           priority={index < 2}
           key={post.slug}
-          href={`/work/${post.slug}`}
+          href='#'
+          // href={`/work/${post.slug}`}
           images={post.metadata.images}
           title={post.metadata.title}
           description={post.metadata.summary}
           content={post.content}
           avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}
           link={post.metadata.link || ""}
+          date={post.metadata.publishedAt}
         />
       ))}
     </Column>

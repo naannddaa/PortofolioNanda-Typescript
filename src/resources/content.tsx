@@ -305,7 +305,7 @@ pengembangan aplikasi website, mobile, desktop, machine learning hingga embeded 
 
 const blog: Blog = {
   path: "/blog",
-  label: "Blog",
+  label: "Achievement",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
