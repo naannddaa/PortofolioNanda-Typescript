@@ -12,6 +12,7 @@ interface PostProps {
 export default function Post({ post, thumbnail }: PostProps) {
   return (
     <Card
+
       fillWidth
       key={post.slug}
       href={`/blog/${post.slug}`}
@@ -23,6 +24,7 @@ export default function Post({ post, thumbnail }: PostProps) {
       radius="l-4"
       gap="24"
     >
+      
       {/* ✅ FIX 2: IMAGE */}
       {post.metadata.image && thumbnail && (
         <Media
