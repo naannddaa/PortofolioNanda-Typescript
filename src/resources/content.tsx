@@ -13,7 +13,7 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -78,7 +78,7 @@ const home: Home = {
     <>
     {/* <span className="text-lg font-semibold" size="xl" weight="strong">
     Laravel • PHP • Dart • Flutter • Figma • Canva </span> */}
-    <Text as="span" size="xl" weight="strong">Laravel • PHP • Dart • Flutter • Figma • Canva </Text>, 
+    <Text as="span" size="xl" weight="strong">Laravel • Dart • Flutter • Figma • Canva </Text> 
     <br /> 
     <span className="text-sm text-gray-500">
    Enthusiast Software Development
