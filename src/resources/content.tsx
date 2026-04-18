@@ -6,9 +6,10 @@ const person: Person = {
   lastName: "Ayu Astarika",
   name: `Nanda Ayu Astarika`,
   role: "Software Developer Enthusiast",
-  avatar: "/images/projects/project-01/fotonanda.jpeg",
+  avatar: "/images/projects/project-01/nanda.png",
   email: "nandakalipait@gmail.com",
   location: "Asia/Jakarta", // IANA time zone identifier
+  region: "Jawa Timur",
   languages: ["English", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -56,7 +57,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/projects/project-01/nanda.png",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -65,10 +66,10 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Act</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Achv
         </Text>
       </Row>
     ),
@@ -81,7 +82,7 @@ const home: Home = {
     <Text as="span" size="xl" weight="strong">Laravel • Dart • Flutter • Figma • Canva </Text> 
     <br /> 
     <span className="text-sm text-gray-500">
-   Enthusiast Software Development
+   Software Development Enthusiast 
     {/* Mahasiswa Teknik Informatika dengan ketertarikan pada pengembangan perangkat lunak, khususnya dalam pembuatan website dan aplikasi mobile. Memiliki pengalaman menggunakan Laravel, PHP, dan Flutter serta kemampuan dalam desain menggunakan Figma dan Canva untuk menghasilkan solusi digital yang efektif dan menarik. */}
 </span>
 </>
@@ -92,7 +93,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from ${person.location}, ${person.region}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -330,45 +331,72 @@ const gallery: Gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/projects/project-01/gallery/tif1_v.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
-    {
-      src: "/images/gallery/vertical-4.jpg",
+     {
+      src: "/images/projects/project-01/gallery/nan2.jpeg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/projects/project-01/gallery/tif2_h.jpeg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/projects/project-01/gallery/tif3_v.jpeg",
       alt: "image",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
+     {
+     src: "/images/projects/project-01/gallery/tif8_h.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/projects/project-01/gallery/tif4_v.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/projects/project-01/gallery/tif6_h.jpeg",
       alt: "image",
       orientation: "vertical",
     },
+   
+    {
+      src: "/images/projects/project-01/gallery/tif7_h.jpeg",
+      alt: "image",
+      orientation: "vertical",
+    },
+     {
+      src: "/images/projects/project-01/gallery/tif10_v.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+     {
+      src: "/images/projects/project-01/gallery/tif11.jpeg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/projects/project-01/gallery/tif12.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+     {
+      src: "/images/projects/project-01/gallery/nan1.jpeg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/projects/project-01/gallery/tif13.jpeg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    
   ],
 };
 
