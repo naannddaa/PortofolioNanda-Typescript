@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Nanda",
   lastName: "Ayu Astarika",
   name: `Nanda Ayu Astarika`,
-  role: "Software Developer Enthusiast",
+  role: "Software Developer Enthusiast | Awardee Beasiswa Bank Indonesia 2026",
   avatar: "/images/projects/project-01/nanda.png",
   email: "nandakalipait@gmail.com",
   location: "Asia/Jakarta", // IANA time zone identifier
@@ -82,7 +82,7 @@ const home: Home = {
     <Text as="span" size="xl" weight="strong">Laravel • Dart • Flutter • Figma • Canva </Text> 
     <br /> 
     <span className="text-sm text-gray-500">
-   Software Development Enthusiast 
+   Software Development Enthusiast | Data Analytics | UI/UX Design
     {/* Mahasiswa Teknik Informatika dengan ketertarikan pada pengembangan perangkat lunak, khususnya dalam pembuatan website dan aplikasi mobile. Memiliki pengalaman menggunakan Laravel, PHP, dan Flutter serta kemampuan dalam desain menggunakan Figma dan Canva untuk menghasilkan solusi digital yang efektif dan menarik. */}
 </span>
 </>
@@ -110,9 +110,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Halo! Saya Nanda Ayu Astarika, mahasiswa Teknik Informatika yang tertarik di bidang pengembangan perangkat lunak, khususnya pembuatan website dan aplikasi mobile.
+        Halo! Saya Nanda Ayu Astarika, mahasiswa Teknik Informatika yang tertarik di bidang Data Analyst dan Pengembangan Perangkat Lunak, khususnya pembuatan website dan aplikasi mobile. 
 
-Saya terbiasa menggunakan Laravel, PHP, dan Flutter dalam membangun aplikasi, serta memiliki kemampuan desain menggunakan Figma dan Canva untuk menghasilkan tampilan yang menarik dan user friendly. Selain itu, saya juga memiliki ketertarikan dalam bidang analisis data.
+Terbiasa menggunakan Laravel, PHP, dan Flutter dalam membangun aplikasi, serta memiliki kemampuan desain menggunakan Figma dan Canva untuk menghasilkan tampilan yang menarik dan user friendly. 
 
 Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan berbagai project, dan terlibat dalam organisasi untuk terus mengembangkan kemampuan saya.
       </>
