@@ -123,10 +123,12 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
     title: "Projects Experience",
     experiences: [
 
-       {
+    {
         company: "Sistem IoT Klasifikasi Grading Buah ",
         timeframe: "Agustus - 2025",
         role: "Machine Learning Developer",
+        // TAMBAHKAN BARIS DI BAWAH INI
+        link: "https://pameran-jti.polije.ac.id/product/570/perancangan-sistem-iot-klasifikasi-grading-tomat-sayur-solanum-lycopersicum-berdasarkan-citra-visual-menggunakan-backpropagation", 
         achievements: [
           <>
            Mengembangkan sistem klasifikasi grading buah berbasis pengolahan citra menggunakan metode Backpropagation untuk meningkatkan efisiensi dan akurasi dalam proses penentuan kualitas buah. </>,
@@ -135,7 +137,6 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/iot.png",
             alt: "Once UI Project",
@@ -144,7 +145,6 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
           },
         ],
       },
-
 
       {
         company: "Aplikasi Administrasi Pemerintah Desa",
@@ -172,6 +172,7 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
         company: "DigitalVillage - Aplikasi Pengajuan Surat Desa",
         timeframe: "Februari - 2025",
         role: "Full Stack Developer",
+        link: "https://pameran-jti.polije.ac.id/product/606/digital-village-aplikasi-pelayanan-administrasi-desa",
         achievements: [
           <>
            Mendesign aplikasi Mobile dengan menggunakan Figma untuk memastikan tampilan yang user-friendly dan sesuai dengan kebutuhan pengguna.
