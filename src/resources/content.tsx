@@ -122,6 +122,36 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
     display: true, // set to false to hide this section
     title: "Projects Experience",
     experiences: [
+    
+     {
+        company: "DigitalVillage - Aplikasi Pengajuan Surat Desa",
+        timeframe: "Februari - 2026",
+        role: "Full Stack Developer",
+        link: "https://pameran-jti.polije.ac.id/product/606/digital-village-aplikasi-pelayanan-administrasi-desa",
+        achievements: [
+          <>
+          Mendesign aplikasi Mobile dengan menggunakan Figma untuk memastikan tampilan yang user-friendly dan sesuai dengan kebutuhan pengguna.
+          </>,
+          <>
+          Mengembangkan aplikasi mobile menggunakan Flutter untuk memudahkan warga desa dalam mengajukan surat secara online, meningkatkan efisiensi dan aksesibilitas layanan administrasi desa.
+          </>,
+           <>
+          Mengembangakn aplikasi website menggunakan Laravel untuk mendukung proses administrasi surat desa, termasuk fitur manajemen data dan pelaporan yang memudahkan petugas desa dalam mengelola pengajuan surat.
+          </>,
+          <>
+          Membuat API untuk menghubungkan aplikasi mobile dan website, memastikan sinkronisasi data yang lancar dan real-time antara kedua platform.  
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/mobile2.png",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+
 
     {
         company: "Sistem IoT Klasifikasi Grading Buah ",
@@ -150,6 +180,7 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
         company: "Aplikasi Administrasi Pemerintah Desa",
         timeframe: "Agustus - 2024",
         role: "Frontend Developer",
+        link: "https://pameran-jti.polije.ac.id/product/205/digital-village",
         achievements: [
           <>
             Mengembangkan tampilan dari aplikasi mobile (Dart) dan website (PHP Native) untuk administrasi pemerintahan desa
@@ -168,39 +199,13 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
           },
         ],
       },
-      {
-        company: "DigitalVillage - Aplikasi Pengajuan Surat Desa",
-        timeframe: "Februari - 2025",
-        role: "Full Stack Developer",
-        link: "https://pameran-jti.polije.ac.id/product/606/digital-village-aplikasi-pelayanan-administrasi-desa",
-        achievements: [
-          <>
-           Mendesign aplikasi Mobile dengan menggunakan Figma untuk memastikan tampilan yang user-friendly dan sesuai dengan kebutuhan pengguna.
-          </>,
-          <>
-            Mengembangkan aplikasi mobile menggunakan Flutter untuk memudahkan warga desa dalam mengajukan surat secara online, meningkatkan efisiensi dan aksesibilitas layanan administrasi desa.
-          </>,
-           <>
-          Mengembangakn aplikasi website menggunakan Laravel untuk mendukung proses administrasi surat desa, termasuk fitur manajemen data dan pelaporan yang memudahkan petugas desa dalam mengelola pengajuan surat.
-          </>,
-           <>
-            Membuat API untuk menghubungkan aplikasi mobile dan website, memastikan sinkronisasi data yang lancar dan real-time antara kedua platform.  
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/mobile2.png",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+  
 
        {
         company: "Sistem Informasi Kasir Berbasis Desktop",
         timeframe: "Agustus - 2023",
         role: "Backend Developer | QA",
+        link: "https://www.youtube.com/watch?v=-SNRoFfa64k",
         achievements: [
           <>
            Membuat fitur manajemen barang untuk memastikan stok ter update secara rea-ltime
@@ -222,6 +227,9 @@ Selama masa perkuliahan, saya aktif mengikuti kompetisi, bootcamp, mengerjakan b
           },
         ],
       },
+
+
+      
 
     ],
   },
@@ -246,9 +254,9 @@ pengembangan aplikasi website, mobile, desktop, machine learning hingga embeded 
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "UI/UX Design",
         description: (
-          <>Membuat design sesuai dengan kebutuhan pengguna.</>
+          <>Membuat design aplikasi sesuai dengan kebutuhan pengguna.</>
         ),
         tags: [
           {
@@ -270,6 +278,33 @@ pengembangan aplikasi website, mobile, desktop, machine learning hingga embeded 
           //   width: 16,
           //   height: 9,
           // },
+        ],
+      },
+      {
+        title: "Poster & Visual Content Design",
+        description: (
+          <>Mengembangkan design visual seperti poster dan konten publikasi digital untuk mendukung kegiatan promosi dan project teknologi</>
+        ),
+        tags: [
+          {
+            name: "Canva",
+            icon: "Canva",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/5.png",
+            alt: "Project image",
+            width: 16,
+            height: 16,
+          },
+          {
+            src: "/images/projects/project-01/POSTER TREND AI.png",
+            alt: "Project image",
+            width: 16,
+            height: 26,
+          },
         ],
       },
       {
@@ -336,11 +371,11 @@ const gallery: Gallery = {
       alt: "image",
       orientation: "horizontal",
     },
-     {
-      src: "/images/projects/project-01/gallery/nan2.jpeg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    //  {
+    //   src: "/images/projects/project-01/gallery/nan2.jpeg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
       src: "/images/projects/project-01/gallery/tif2_h.jpeg",
       alt: "image",
@@ -361,11 +396,11 @@ const gallery: Gallery = {
       alt: "image",
       orientation: "horizontal",
     },
-    {
-      src: "/images/projects/project-01/gallery/tif6_h.jpeg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // {
+    //   src: "/images/projects/project-01/gallery/tif6_h.jpeg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
    
     {
       src: "/images/projects/project-01/gallery/tif7_h.jpeg",
@@ -387,13 +422,13 @@ const gallery: Gallery = {
       alt: "image",
       orientation: "horizontal",
     },
-     {
-      src: "/images/projects/project-01/gallery/nan1.jpeg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    //  {
+    //   src: "/images/projects/project-01/gallery/nan1.jpeg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
-      src: "/images/projects/project-01/gallery/tif13.jpeg",
+      src: "/images/projects/project-01/gallery/1s.jpeg",
       alt: "image",
       orientation: "vertical",
     },
