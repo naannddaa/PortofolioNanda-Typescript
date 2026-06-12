@@ -6,7 +6,7 @@ import {
   Column,
   Flex,
   Heading,
-  SmartLink,
+  Button,
   Text,
 } from "@once-ui-system/core";
 
@@ -33,6 +33,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
   date,
 }) => {
+  const handleOpenLink = () => {
+    if (link) {
+      window.open(link, "_blank");
+    }
+  };
+
   return (
     <Column fillWidth gap="m">
       <Carousel
@@ -94,13 +100,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
             <Flex gap="24" wrap>
               {link && (
-                <SmartLink
+                <Button
+                  onClick={handleOpenLink}
                   suffixIcon="arrowUpRightFromSquare"
-                  style={{ margin: "0", width: "fit-content" }}
-                  href={link}
+                  variant="secondary"
                 >
-                  <Text variant="body-default-s">View project</Text>
-                </SmartLink>
+                  View project
+                </Button>
               )}
             </Flex>
           </Column>
